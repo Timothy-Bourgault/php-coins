@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <title>Change Calculator Form</title>
+  </head>
+  <body>
+    <div class='container'>
+       <h1>Change Calculator</h1>
+       <form action='/view_change'>
+           <div class='form-group'>
+             <label for='change'>Enter any amount of money(eg:$1.25):</label>
+             <input id='change' name='change' class='form-control' type='text'>
+           </div>
+           <div>
+             <input type="radio" name="coinageType" value="minimum coins" checked> Minimum coins<br>
+             <input type="radio" name="coinageType" value="dimes"> Dimes <br>
+             <input type="radio" name="coinageType" value="nickels"> Nickels<br>
+             <input type="radio" name="coinageType" value="pennies"> Pennies<br>
+           </div>
+           <button type='submit' class='btn-success'>Make Change!</button>
+       </form>
+    </div>
+  </body>
+</html>
